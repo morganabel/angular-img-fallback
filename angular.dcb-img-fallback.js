@@ -5,6 +5,7 @@
  * https://github.com/dcohenb/angular-img-fallback
  */
 (function () {
+    'use strict';
     angular.module('dcbImgFallback', [])
 
         .directive('fallbackSrc', ['imageService', imageService => {
