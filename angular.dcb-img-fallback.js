@@ -33,6 +33,11 @@
                         element[0].src = newSrc;
                     }
 
+                    // Use fallback for blank src values.
+                    if (!element[0].src || element[0].src.length === 0) {
+                        element[0].src = newSrc;
+                    }
+
                     element.on('error', errorHandler);
 
                     scope.$on('$destroy', () => {
